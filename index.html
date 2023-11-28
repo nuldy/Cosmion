@@ -7,7 +7,9 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <script type="module" src="main.js"></script>
+    <script type="module" src="/3D/sun.js"></script>
+    <script type="module" src="/3D/jupyter.js"></script>
+    <script type="module" src="/3D/earth.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,6 +19,7 @@
         <ul class="carousel-indicators">
           <li data-target="#carousel" data-slide-to="0" class="active"></li>
           <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
         </ul>
 
         <!-- Slides -->
@@ -48,12 +51,47 @@
           </div>
           <div class="carousel-item">
             <div
-              class="d-flex justify-content-center align-items-center"
-              style="height: 400px"
-            ></div>
+              class="contianer-carousel d-flex justify-content-center align-items-center"
+            >
+              <div id="jupyter-container"></div>
+            </div>
             <div class="carousel-caption d-none d-md-block">
-              <h5>Title 2</h5>
-              <p>Description 2</p>
+              <h5>Jupyter</h5>
+              <p>
+                Jupiter is the largest planet in our solar system, a gas giant
+                with a diameter of about 86,881 miles (139,822 kilometers). It
+                is known for its vibrant bands of clouds, including the iconic
+                Great Red Spot, a massive storm that has been raging for
+                centuries. Jupiter has a strong magnetic field and more than 75
+                known moons, with the four largest—Io, Europa, Ganymede, and
+                Callisto—known as the Galilean moons. The planet's composition
+                primarily consists of hydrogen and helium. Jupiter's immense
+                size and gravity contribute significantly to its role as a
+                celestial body that influences the dynamics of the solar system.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="contianer-carousel d-flex justify-content-center align-items-center"
+            >
+              <div id="earth-container"></div>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Earth</h5>
+              <p>
+                Earth, the third planet from the Sun, is a diverse and dynamic
+                sphere with a diameter of 7,917 miles. From polar ice caps to
+                tropical rainforests, its varied ecosystems support a wide range
+                of life. The planet's rotation governs day and night, while its
+                orbit around the Sun determines the changing seasons. As
+                stewards of Earth, it is crucial to comprehend and safeguard its
+                delicate balance for the preservation of biodiversity and the
+                continuity of life, recognizing that our actions shape the
+                future of this extraordinary planetary home. Our responsibility
+                lies in fostering sustainability and environmental stewardship
+                to ensure the well-being of both the planet and its inhabitants.
+              </p>
             </div>
           </div>
         </div>
