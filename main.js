@@ -8,7 +8,7 @@ const camera = new THREE.PerspectiveCamera(
   1000
 );
 const renderer = new THREE.WebGLRenderer();
-renderer.setSize(1100, 600);
+renderer.setSize(1200, 600);
 document.getElementById("matahari-container").appendChild(renderer.domElement);
 
 //matahari brok
