@@ -5,3 +5,91 @@
 .carousel-item {
   height: 50rem;
 }
+
+
+/* HOME */
+.planet{
+  width: 810px;
+height: 810px;
+flex-shrink: 0;
+border-radius: 810px;
+background: linear-gradient(270deg, #210A37 10%, #000 100%);
+box-shadow: 97px 0px 99.6px -29px rgba(122, 6, 234, 0.51);
+}
+.bg-Home{
+  display: grid;
+  place-items: center;
+  height: 48.098vw;
+  background-image:url("./asset/bg-Home.png");
+  filter: contrast(1.5);
+}
+h1.Hometxt {
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 200px;
+  -webkit-text-stroke: 4px white;
+  color: transparent !important;
+}
+
+
+
+.btn1 {		
+  border-radius: 12px;
+	position: relative !important;	
+	font-size: 1.4rem !important;
+	color: white !important;
+	text-transform: uppercase !important;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1) !important;	
+	cursor: pointer !important;
+	user-select: none !important;
+}
+
+.btn1:before, .btn1:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.btn1:hover {
+  
+  border: none;
+	color: black !important;
+	transition-delay: .5s !important;
+}
+
+.btn1:hover:before {
+  border-radius: 12px;
+	transition-delay: 0s;
+}
+
+.btn1:hover:after {
+  border-radius: 12px;
+	background: white;
+	transition-delay: .35s;
+}
+
+/* From Top */
+
+.from-top:before, 
+.from-top:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.from-top:before {
+	bottom: 0;	
+	border: 1px solid white;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-top:after {
+	top: 0;
+	height: 0;
+}
+
+.from-top:hover:before,
+.from-top:hover:after {
+	height: 100%;
+}
