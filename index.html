@@ -10,10 +10,36 @@
     <script type="module" src="/3D/sun.js"></script>
     <script type="module" src="/3D/jupyter.js"></script>
     <script type="module" src="/3D/earth.js"></script>
+    <script type="module" src="home.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="3d-view">
+    <section>
+      <div class=" home d-flex align-items-center" style="height: 50vw;">
+        <div id="bg-home" style="position: fixed; top: 0; left: 0; z-index: -1;" ></div>
+        <div class="z-0 container-fluid d-flex flex-column align-items-lg-center" style="background: none !;" >
+            <h1 style="font-family: 'Kodchasan', sans-serif;animation: EnterAnim 4s ease 0s 1 normal forwards;" class="Hometxt effectTXT">COSMION</h1>
+            <a href="#carousel" style="text-decoration: none;animation: Btn-Anim 2s ease 0s 1 normal forwards;">
+                <div class="btn1 from-top px-5 py-3 d-flex text-center">S T A R T</div>
+            </a>
+        </div>
+    </div>
+    </section>
+    <section class="mb-5">
+      <div class="container-fluid text-white d-flex justify-content-evenly p-5">
+        <div>
+          <h2 >ABOUT COSMION</h2>
+          <p style="inline-size: 50vw;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione nulla dignissimos, animi et laudantium saepe totam velit quasi illum adipisci! Maiores doloribus, ad inventore minus cum quibusdam ab praesentium et.</p>
+        </div>
+        <div class="d-flex justify-content-end">
+          <img class="w-75" src="./asset/earth.jpg" alt="">
+        </div>
+      </div>
+
+    </section>
+
+
+    <section id="planet" class="3d-view">
       <div id="carousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ul class="carousel-indicators">
