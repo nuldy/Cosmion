@@ -7,165 +7,44 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <script type="module" src="/3D/sun.js"></script>
-    <script type="module" src="/3D/jupyter.js"></script>
-    <script type="module" src="/3D/earth.js"></script>
     <script type="module" src="home.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section>
-      <div class="home d-flex align-items-center" style="height: 50vw">
-        <div
-          id="bg-home"
-          style="position: fixed; top: 0; left: 0; z-index: -1"
-        ></div>
-        <div
-          class="z-0 container-fluid d-flex flex-column align-items-lg-center"
-          style="background: none !"
-        >
-          <h1
-            style="
-              font-family: 'Kodchasan', sans-serif;
-              animation: EnterAnim 4s ease 0s 1 normal forwards;
-            "
-            class="Hometxt effectTXT"
-          >
-            COSMION
-          </h1>
-          <a
-            href="#carousel"
-            style="
-              text-decoration: none;
-              animation: Btn-Anim 2s ease 0s 1 normal forwards;
-            "
-          >
-            <div class="btn1 from-top px-5 py-3 d-flex text-center">
-              S T A R T
-            </div>
-          </a>
+    <section >
+      <div class=" home d-flex align-items-center" style="height: 50vw;">
+        <div id="bg-home" style="position: fixed; top: 0; left: 0; z-index: -1;" ></div>
+        <div class="z-0 container-fluid d-flex flex-column align-items-lg-center" style="background: none !;" >
+            <h1 style="font-family: 'Kodchasan', sans-serif;animation: EnterAnim 4s ease 0s 1 normal forwards; user-select: none;" class="Hometxt effectTXT">COSMION</h1>
+            <a href="#aboutUs" style="text-decoration: none;animation: Btn-Anim 2s ease 0s 1 normal forwards;">
+                <div class="btn1 from-top px-5 py-3 d-flex text-center">S T A R T</div>
+            </a>
         </div>
-      </div>
+    </div>
     </section>
-    <section class="mb-5">
-      <div class="container-fluid text-white d-flex justify-content-evenly p-5">
+    <section class="mb-5" style="padding-top: 50rem; padding-bottom: 10rem;">
+      <div id="aboutUs" class="container-fluid text-white d-flex w-100 justify-content-evenly p-5">
         <div>
-          <h2>ABOUT COSMION</h2>
-          <p style="inline-size: 50vw">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
-            nulla dignissimos, animi et laudantium saepe totam velit quasi illum
-            adipisci! Maiores doloribus, ad inventore minus cum quibusdam ab
-            praesentium et.
+          <h2 >ABOUT COSMION</h2>
+          <p style="inline-size: 50vw;">
+            Welcome to Cosmion, your digital portal to the captivating world of our solar system's planets. With a visually appealing design and user-friendly interface, Cosmion provides an immersive experience, allowing you to explore the unique features of each celestial body. From the scorching proximity of Mercury to the icy expanses of Neptune, our curated content offers a blend of stunning visuals, interactive illustrations, and insightful articles.
+            <br/> <br/>
+            Delve into mesmerizing image galleries and 3D visualizations that take you on a journey across the surfaces of these planets, unraveling their mysteries. Cosmion doesn't just focus on aesthetics; we deliver reliable scientific information, carefully curated to enhance your understanding of the formation, composition, and atmospheric conditions of each planet.
           </p>
         </div>
-        <div class="d-flex justify-content-end">
-          <img class="w-75" src="./asset/earth.jpg" alt="" />
+        <!-- <div class="d-flex justify-content-end">
+          <a id="solarimg" href="/"><img src="./asset/Solarsystem.png" width="90%" ></a>
+        </div> -->
+          <div class="w-100 text-center d-flex flex-column">
+            <a href="solarsys.html">
+              <img id="solarimg" src="./asset/Solarsystem.png" class="card-img w-100" alt="solarsys" >
+            </a>
+            <p class="styleView">VIEW SOLAR SYSTEM</p>
+          </div>
+        
         </div>
-      </div>
-    </section>
-
-    <section id="planet" class="3d-view">
-      <div id="carousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-          <li data-target="#carousel" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel" data-slide-to="1"></li>
-          <li data-target="#carousel" data-slide-to="2"></li>
-        </ul>
-
-        <!-- Slides -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div
-              class="contianer-carousel d-flex justify-content-center align-items-center"
-            >
-              <div id="matahari-container"></div>
-            </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Sun</h5>
-              <p>
-                The Sun is the central star of our solar system and is the main
-                source of energy for life on Earth. the main source of energy
-                for life on Earth. With a diameter of about 1.4 million
-                kilometers in diameter, the Sun has a mass that is much larger
-                than all the planets in the solar system combined. larger than
-                all the planets in the solar system combined. The process of
-                nuclear fusion at its core produces light and heat that is
-                diffused throughout the solar system. is spread throughout the
-                solar system. The Sun also has layered structure, including the
-                core, radiant zone, and visible photosphere. which is visible.
-                The Sun's light creates the day and night cycle on Earth and
-                plays an important role in various weather and climate
-                phenomena.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item row">
-            <div
-              class="contianer-carousel d-flex justify-content-center align-items-center"
-            >
-              <div id="jupiter-container"></div>
-            </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Jupyter</h5>
-              <p>
-                Jupiter is the largest planet in our solar system, a gas giant
-                with a diameter of about 86,881 miles (139,822 kilometers). It
-                is known for its vibrant bands of clouds, including the iconic
-                Great Red Spot, a massive storm that has been raging for
-                centuries. Jupiter has a strong magnetic field and more than 75
-                known moons, with the four largest—Io, Europa, Ganymede, and
-                Callisto—known as the Galilean moons. The planet's composition
-                primarily consists of hydrogen and helium. Jupiter's immense
-                size and gravity contribute significantly to its role as a
-                celestial body that influences the dynamics of the solar system.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div
-              class="contianer-carousel d-flex justify-content-center align-items-center"
-            >
-              <div id="earth-container"></div>
-            </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Earth</h5>
-              <p>
-                Earth, the third planet from the Sun, is a diverse and dynamic
-                sphere with a diameter of 7,917 miles. From polar ice caps to
-                tropical rainforests, its varied ecosystems support a wide range
-                of life. The planet's rotation governs day and night, while its
-                orbit around the Sun determines the changing seasons. As
-                stewards of Earth, it is crucial to comprehend and safeguard its
-                delicate balance for the preservation of biodiversity and the
-                continuity of life, recognizing that our actions shape the
-                future of this extraordinary planetary home. Our responsibility
-                lies in fostering sustainability and environmental stewardship
-                to ensure the well-being of both the planet and its inhabitants.
-              </p>
-            </div>
-          </div>
         </div>
 
-        <a
-          class="carousel-control-prev"
-          href="#carousel"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carousel"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" ariahidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

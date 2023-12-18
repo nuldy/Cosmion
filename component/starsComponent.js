@@ -3,7 +3,7 @@ export function starsFunction(scene) {
   const starsGeometry = new THREE.BufferGeometry();
   const starsMaterial = new THREE.PointsMaterial({
     color: 0xffffff,
-    size: 0.3,
+    size: 0.1,
   });
 
   const starsVertices = [];

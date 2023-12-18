@@ -6,6 +6,3 @@ const solarSystem = new SolarSystem("bg-home");
 
 starsFunction(solarSystem.scene);
 solarSystem.animate();
-
-
-

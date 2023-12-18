@@ -18,7 +18,7 @@ export class SolarSystem {
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
 
     window.addEventListener("resize", () => this.handleWindowResize());
-
+    this.controls.enablePan = false;
     this.camera.position.z = 3;
   }
 
