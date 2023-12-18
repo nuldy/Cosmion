@@ -5,10 +5,14 @@
 .carousel-item {
   height: 100%;
 }
-.opacitynav{
-  background-color: black !important;  
+.opacitynav {
+  background-color: black !important;
 }
 
 .navbar-nav .nav-link {
-    color: white !important;
+  color: white !important;
+}
+
+p {
+  text-align: justify;
 }
