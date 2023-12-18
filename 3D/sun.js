@@ -12,6 +12,8 @@ const sunMaterial = new THREE.MeshBasicMaterial({ map: sunTexture });
 const sun = new THREE.Mesh(sunGeometry, sunMaterial);
 solarSystem.scene.add(sun);
 
+solarSystem.setPlanet(sun);
+
 const light = new THREE.AmbientLight(0xffffff, 2);
 solarSystem.scene.add(light);
 

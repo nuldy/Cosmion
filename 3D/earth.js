@@ -12,6 +12,8 @@ const earthMaterial = new THREE.MeshBasicMaterial({ map: earthTexture });
 const earth = new THREE.Mesh(earthGeometry, earthMaterial);
 solarSystem.scene.add(earth);
 
+solarSystem.setPlanet(earth);
+
 const light = new THREE.AmbientLight(0xffffff, 2);
 solarSystem.scene.add(light);
 

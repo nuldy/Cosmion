@@ -12,6 +12,8 @@ const jupiterMaterial = new THREE.MeshBasicMaterial({ map: jupiterTexture });
 const jupiter = new THREE.Mesh(jupiterGeometry, jupiterMaterial);
 solarSystem.scene.add(jupiter);
 
+solarSystem.setPlanet(jupiter);
+
 const light = new THREE.AmbientLight(0xffffff, 2);
 solarSystem.scene.add(light);
 
