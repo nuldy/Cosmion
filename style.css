@@ -1,6 +1,15 @@
 
 
 /* HOME */
+body{
+	overflow-y: scroll;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
 .planet{
   width: 810px;
 height: 810px;
