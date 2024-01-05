@@ -305,7 +305,7 @@ window.addEventListener("mousedown", (e) => {
 
 function movePage() {
   animationStarted = true;
-  window.location.href = "carousel.html#matahari-container";
+  window.location.href = "carousel.html";
 }
 
 function updateTextFaces() {
