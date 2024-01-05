@@ -22,6 +22,7 @@ export class SolarSystem {
     window.addEventListener("resize", () => this.handleWindowResize());
     this.camera.position.z = 4;
     this.camera.position.y = 2;
+    this.controls.enablePan = false;
   }
 
   handleWindowResize() {
